@@ -1,11 +1,17 @@
 package com.example.model;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+
 /**
  * Represents a product with a name and price.
  */
 public class Product {
 
+    @NotBlank(message = "Tên sản phẩm không được để trống")
     private String name;
+
+    @Min(value = 0, message = "Số tiền không được âm")
     private double price;
 
 
