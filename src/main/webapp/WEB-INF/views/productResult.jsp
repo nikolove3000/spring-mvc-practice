@@ -8,12 +8,12 @@
 <body>
     <h1>Product Name: </h1>
     <ul>
-        <c:out value="${productForm.name}"></c:out>
+        <c:out value="${product.name}"></c:out>
     </ul>
 
     <h1>Price: </h1>
     <ul>
-        <c:out value="${productForm.price}"></c:out>
+        <c:out value="${product.price}"></c:out>
     </ul>
 
 </body>
