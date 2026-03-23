@@ -23,6 +23,10 @@
     <mvc:interceptors>
         <bean class="com.example.interceptor.LoggingInterceptor"/>
     </mvc:interceptors>
+
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
+
 </beans>
 
 
