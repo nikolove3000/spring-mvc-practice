@@ -20,6 +20,9 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <mvc:interceptors>
+        <bean class="com.example.interceptor.LoggingInterceptor"/>
+    </mvc:interceptors>
 </beans>
 
 
